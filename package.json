@@ -1,0 +1,12 @@
+{
+  "name": "physical-ai-and-humanoid-robotics-book-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd Physical-AI-and-Humanoid-Robotics-Book && npm install && npm run build",
+    "start": "cd Physical-AI-and-Humanoid-Robotics-Book && npm run serve"
+  },
+  "workspaces": [
+    "Physical-AI-and-Humanoid-Robotics-Book"
+  ]
+}

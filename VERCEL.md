@@ -4,7 +4,7 @@ You can deploy this Docusaurus project on Vercel with just a few steps.
 
 ## One-Click Deploy
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/SyedaQudsiaAli/Physical-AI-and-Humanoid-Robotics-Book.HACKATHON&project-name=Physical-AI-and-Humanoid-Robotics-Book&repository-name=Physical-AI-and-Humanoid-Robotics-Book)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/SyedaQudsiaAli/Physical-AI-and-Humanoid-Robotics-Book.HACKATHON)
 
 ## Manual Deployment
 
@@ -13,27 +13,27 @@ You can deploy this Docusaurus project on Vercel with just a few steps.
    npm i -g vercel
    ```
 
-2. Navigate to the project directory:
+2. Run from the root of the repository:
    ```bash
-   cd Physical-AI-and-Humanoid-Robotics-Book
+   vercel --build-env DEPLOYMENT_PLATFORM=vercel
    ```
 
-3. Build the project:
-   ```bash
-   npm run build
-   ```
+## Vercel Dashboard Deployment Configuration
 
-4. Deploy to Vercel:
-   ```bash
-   vercel
-   ```
+If deploying via the Vercel dashboard:
+
+- **Build Command**: `cd Physical-AI-and-Humanoid-Robotics-Book && npm install && npm run build`
+- **Output Directory**: `Physical-AI-and-Humanoid-Robotics-Book/build`
+- **Root Directory**: Select the root of the repository
+- **Environment Variables**:
+  - `DEPLOYMENT_PLATFORM`: `vercel`
 
 ## Environment Configuration
 
-- Framework: Docusaurus
-- Build Command: `cd .. && npm install && cd Physical-AI-and-Humanoid-Robotics-Book && npm run build`
-- Output Directory: `Physical-AI-and-Humanoid-Robotics-Book/build`
-- Install Command: `cd Physical-AI-and-Humanoid-Robotics-Book && npm install`
+When Vercel builds the project, it will:
+1. Install dependencies in the Physical-AI-and-Humanoid-Robotics-Book directory
+2. Build the Docusaurus site with the appropriate configuration for Vercel deployment
+3. Serve the built files from the correct directory
 
 ## Custom Domain
 

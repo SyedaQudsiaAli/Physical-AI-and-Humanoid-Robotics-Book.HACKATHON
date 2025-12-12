@@ -49,12 +49,16 @@ After enabling GitHub Pages and once the GitHub Actions workflow completes succe
 
 ### Vercel
 The site can also be deployed on Vercel for faster global loading.
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/SyedaQudsiaAli/Physical-AI-and-Humanoid-Robotics-Book.HACKATHON&project-name=Physical-AI-and-Humanoid-Robotics-Book&repository-name=Physical-AI-and-Humanoid-Robotics-Book)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/SyedaQudsiaAli/Physical-AI-and-Humanoid-Robotics-Book.HACKATHON)
 
 To deploy manually to Vercel:
 1. Install the Vercel CLI: `npm i -g vercel`
-2. Navigate to the project directory: `cd Physical-AI-and-Humanoid-Robotics-Book`
-3. Run: `vercel --build-env DEPLOYMENT_PLATFORM=vercel`
+2. From the root of the repository, run: `vercel --build-env DEPLOYMENT_PLATFORM=vercel`
+
+For dashboard deployment, configure:
+- Build Command: `cd Physical-AI-and-Humanoid-Robotics-Book && npm install && npm run build`
+- Output Directory: `Physical-AI-and-Humanoid-Robotics-Book/build`
+- Environment Variables: `DEPLOYMENT_PLATFORM=vercel`
 
 ### Installation
 

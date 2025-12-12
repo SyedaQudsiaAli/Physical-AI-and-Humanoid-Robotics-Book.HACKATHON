@@ -35,7 +35,17 @@ This project hosts an educational resource focusing on the intersection of artif
 
 ### GitHub Pages
 The site is automatically deployed to GitHub Pages using GitHub Actions.
-The site is available at: `https://SyedaQudsiaAli.github.io/Physical-AI-and-Humanoid-Robotics-Book.HACKATHON/`
+The site will be available at: `https://SyedaQudsiaAli.github.io/Physical-AI-and-Humanoid-Robotics-Book.HACKATHON/`
+
+**Important**: You need to enable GitHub Pages in your repository settings:
+1. Go to your GitHub repository
+2. Click on "Settings" tab
+3. Scroll down to "Pages" section in the left sidebar
+4. Under "Source", select "Deploy from a branch"
+5. Select "gh-pages" as the branch and "/" as the folder
+6. Click "Save"
+
+After enabling GitHub Pages and once the GitHub Actions workflow completes successfully, your site will be live.
 
 ### Vercel
 The site can also be deployed on Vercel for faster global loading.

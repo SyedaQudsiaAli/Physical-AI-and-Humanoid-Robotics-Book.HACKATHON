@@ -15,10 +15,14 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://SyedaQudsiaAli.github.io',
+  url: process.env.DEPLOYMENT_PLATFORM === 'vercel'
+    ? 'https://Physical-AI-and-Humanoid-Robotics-Book.vercel.app'
+    : 'https://SyedaQudsiaAli.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/Physical-AI-and-Humanoid-Robotics-Book.HACKATHON/',
+  baseUrl: process.env.DEPLOYMENT_PLATFORM === 'vercel'
+    ? '/'
+    : '/Physical-AI-and-Humanoid-Robotics-Book.HACKATHON/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.

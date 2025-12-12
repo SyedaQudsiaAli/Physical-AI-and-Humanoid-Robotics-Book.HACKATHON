@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "Physical-AI-and-Humanoid-Robotics-Book/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distPath": "Physical-AI-and-Humanoid-Robotics-Book/build"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "Physical-AI-and-Humanoid-Robotics-Book/build/$1",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      }
+    }
+  ]
+}

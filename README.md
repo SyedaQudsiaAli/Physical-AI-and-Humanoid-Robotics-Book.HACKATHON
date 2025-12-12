@@ -29,7 +29,22 @@ This project hosts an educational resource focusing on the intersection of artif
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) (version 16 or higher)
-- [Yarn](https://yarnpkg.com/) package manager
+- [Yarn](https://yarnpkg.com/) or npm package manager
+
+## 🌐 Deployment
+
+### GitHub Pages
+The site is automatically deployed to GitHub Pages using GitHub Actions.
+The site is available at: `https://SyedaQudsiaAli.github.io/Physical-AI-and-Humanoid-Robotics-Book.HACKATHON/`
+
+### Vercel
+The site can also be deployed on Vercel for faster global loading.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/SyedaQudsiaAli/Physical-AI-and-Humanoid-Robotics-Book.HACKATHON&project-name=Physical-AI-and-Humanoid-Robotics-Book&repository-name=Physical-AI-and-Humanoid-Robotics-Book)
+
+To deploy manually to Vercel:
+1. Install the Vercel CLI: `npm i -g vercel`
+2. Navigate to the project directory: `cd Physical-AI-and-Humanoid-Robotics-Book`
+3. Run: `vercel --build-env DEPLOYMENT_PLATFORM=vercel`
 
 ### Installation
 

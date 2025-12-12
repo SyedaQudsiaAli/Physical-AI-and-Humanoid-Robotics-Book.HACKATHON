@@ -1,0 +1,8 @@
+{
+  "label": "Chapter 4: Vision-Language-Action (VLA) Cognition",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Implementing LLM-powered high-level command understanding and task planning."
+  }
+}

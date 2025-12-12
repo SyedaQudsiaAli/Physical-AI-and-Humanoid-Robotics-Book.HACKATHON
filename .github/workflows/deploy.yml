@@ -1,4 +1,4 @@
-yml
+
 name: Deploy Docusaurus to GitHub Pages
 
 on:
@@ -51,4 +51,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4Physical-AI-and-Humanoid-Robotics-Book
+        uses: actions/deploy-pages@v4

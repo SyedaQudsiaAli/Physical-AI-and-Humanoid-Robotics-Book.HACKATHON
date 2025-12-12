@@ -1,55 +1,68 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+Version change: 0.0.0 → 1.0.0
+Modified principles: None (new principles defined)
+Added sections: Key Standards, Constraints and Success Criteria
+Removed sections: None
+Templates requiring updates:
+- .specify/templates/plan-template.md: ⚠ pending
+- .specify/templates/spec-template.md: ⚠ pending
+- .specify/templates/tasks-template.md: ⚠ pending
+- .claude/commands/sp.adr.md: ⚠ pending
+- .claude/commands/sp.analyze.md: ⚠ pending
+- .claude/commands/sp.checklist.md: ⚠ pending
+- .claude/commands/sp.clarify.md: ⚠ pending
+- .claude/commands/sp.constitution.md: ⚠ pending
+- .claude/commands/sp.git.commit_pr.md: ⚠ pending
+- .claude/commands/sp.implement.md: ⚠ pending
+- .claude/commands/sp.phr.md: ⚠ pending
+- .claude/commands/sp.plan.md: ⚠ pending
+- .claude/commands/sp.specify.md: ⚠ pending
+- .claude/commands/sp.tasks.md: ⚠ pending
+Follow-up TODOs: None
+-->
+# Physical AI and Humanoid Robotics Book Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Accuracy
+All information and claims must be verified against primary sources.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Clarity
+Content must be clear and accessible for an academic audience with a computer science background.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Reproducibility
+All claims must be cited and traceable to their original sources.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Rigor
+Preference for peer-reviewed articles as primary sources to ensure academic robustness.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+## Key Standards
 
-### [PRINCIPLE_6_NAME]
+- All factual claims must be traceable to sources.
+- Citation format: APA style.
+- Source types: minimum 50% peer-reviewed articles.
+- Plagiarism check: 0% tolerance before submission.
+- Writing clarity: Flesch-Kincaid grade 10-12.
 
+## Constraints and Success Criteria
 
-[PRINCIPLE__DESCRIPTION]
+**Constraints:**
+- Word count: 70,000-90,000 words.
+- Format: Markdown source with APA citations.
+- Sources: Peer-reviewed robotics/AI papers (last 10 years) + official technical documentation.
+- Timeline: 17 weeks (10 weeks draft, 3 weeks technical review, 4 weeks final revisions).
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+**Success Criteria:**
+- All claims verified against sources.
+- Zero plagiarism detected.
+- Passes fact-checking review.
+- Includes 12+ diagrams and 20+ reputable citations.
+- Enables readers to reproduce a full humanoid workflow in simulation.
+- Uses accurate, up-to-date references (ICRA, IROS, CoRL, Isaac docs, ROS 2 docs).
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution supersedes all other project practices. Amendments require documentation, approval, and a clear migration plan. Compliance will be verified through regular reviews.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-05 | **Last Amended**: 2025-12-05

@@ -71,17 +71,16 @@ This command generates static content into the `build` directory and can be serv
 
 ### Deployment
 
-Using SSH:
-```bash
-USE_SSH=true yarn deploy
-```
+The site is automatically deployed to GitHub Pages using GitHub Actions when changes are pushed to the main branch.
 
-Or with GitHub username:
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
+The site will be available at: `https://SyedaQudsiaAli.github.io/Physical-AI-and-Humanoid-Robotics-Book.HACKATHON/`
 
-This command builds the website and pushes the static content to the `gh-pages` branch for GitHub Pages hosting.
+To manually deploy, you can run:
+```bash
+cd Physical-AI-and-Humanoid-Robotics-Book
+npm run build
+```
+Then push the build folder manually to the `gh-pages` branch.
 
 ## 🛠️ Tech Stack
 
